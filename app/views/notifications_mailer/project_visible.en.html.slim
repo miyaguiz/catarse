@@ -1,63 +1,65 @@
 - project = @notification.project
-|Olá, #{project.user.display_name}.
+|Hi, #{project.user.display_name}.
 br
 br
-|Seu projeto acabou de entrar no ar e já está apto a começar a receber os apoios, agora é a hora! Agora é começar a fazer a barrinha verde subir :D
+|Your project just got approved and is already able to start receiving contributions. Now it’s the time to make the green bar rise. Let’s get to work to make your project a success!
 br
 br
 = link_to(project.name, project_by_slug_url(project.permalink))
 br
 br
-|Antes de mais nada, Preencha as informações do link a seguir para receber a comunicação do #{Configuration[:company_name]} exclusiva para realizadores: #{link_to 'http://eepurl.com/pDZ6r', 'http://eepurl.com/pDZ6r'}
-strong  (preenchimento obrigatório)
+|We would like to share a few useful information.
 br
 br
-strong Agora vai um bando de informacões úteis:
+strong To contribute promote your project here are some tips:
 ol
-  li Para promover o seu projeto, #{link_to('Aqui','https://docs.google.com/document/d/1Uwg8aRj9LyOE-MU1HOL02HxsVYNXyZcR11dbLRE8Y3c/edit')} temos algumas dicas. O documento é aberto, então sinta-se a vontade para incluir novas observações =)
   li
-    |Para interagir com seus apoiadores, você tem três abas:
+    |First. To interact with your supporters, you have three tabs on your project’s page:
     br
     br
-    strong Apoiadores
+    strong Backers
     br
-    | Na aba de apoiadores você terá acesso ao e-mail de todos os seus contribuintes, o valor da colaboração e a recompensa selecionada.
-    br
-    br
-    strong Novidades
-    br
-    | Tudo que você publicar nessa aba, será enviado diretamente no EMAIL dos seus apoaidores. Utilize essa ferramenta para se comunicar com eles e fazer chamados especiais durante os momentos chaves da campanha.  Agora, cuidado para não virar um SPAMMER e encher a caixa de entrada de seus apoiadores :(
+    |In the ‘Backers’ tab you will have access to the e-mail of all its contributors, the value of the collaboration and the reward selected. Use this information wisely. 
     br
     br
-    strong Comentários
+    strong Updates
     br
-    | Acompanhe os comentários, fique ligado no que seus colaboradores estão achado do projeto, participe das conversas. Comunicação é fundamental a todo momento e passa segurança.
+    |Everything you publish in this tab, will be sent directly to the EMAIL of your backers. Use this tool to communicate with them and make special call-to-action during the key moments of your campaign. Now, be careful not to become a SPAMMER and filling the Inbox of your backers. Periodically updates are strongly recommended.
+    br
+    br
+    strong Comments
+    br
+    |Follow your audiences’ comments and participate in the conversations. Communication is paramount at all times.
   li
-    |Além disso, você poderá editar o seu projeto, seguindo algumas regras:
+    |Second, you can edit your project, by following some rules:
     ul
-      li Não poderá alterar prazo e valor a ser arrecadado
-      li Não poderá alterar conteúdo e valor de recompensas que já possui algum apoio iniciado.
-    |E Poderá:
+      li Can't change the project time or the amount to be collected.
+      li Can't change the content or the value of rewards that already has received support.
+    |You will be able to: 
     ul
-      li Trocar o vídeo principal
-      li Editar a descrição do seu projeto
-      li Criar novas recompensas
-      li Encerrar recompensas (limitando-as)
-      li Alterar conteúdo e valor de recompensas não adquiridas
-      li Trocar o Thumbnail e a Frase de Efeito
-    |Para saber todos os detalhes sobre a edição de projeto online, entre #{link_to 'aqui', 'https://docs.google.com/document/d/186yNtCvVb4Z0nwy63VusIhKFsiLApcV8zu2_RG_AM3M/edit'}.
+      li Change or edit the project video
+      li Change or edit the project description
+      li Create new rewards!
+      li Terminate unclaimed rewards (limited)
+      li Change the content and value of rewards not acquired
+      li Change your main project image thumbnail
     br
     br
-    strong IMPORTANTE:
-    |Para realizar todas essas ações, você precisa estar logado com o perfil “dono” do projeto no #{Configuration[:company_name]}, ok?
+    strong IMPORTANT:
+    |In order to accomplish any of these actions, you must be logged in with "owner" profile of the project in Antrocket.
   li
-    |Qualquer dúvida referente às transações financeiras, seja durante a captação do projeto, seja sobre transferência dos valores que foram captados ou sobre reembolsos (tomara que não!), dê uma lida nesse #{link_to 'guia', 'https://docs.google.com/a/catarse.me/document/d/1LzN01c6r_yZXcjnGGwp9NELw5lNcKDj38QTXI7Rl-BY/edit'}
-    |Se o guia não resolver, mande email para #{mail_to Configuration[:email_payments]}
+    br
+    |Third. Any questions regarding financial transactions, both during the project's funding, whether on transfer of values that were picked up or on reimbursements, please contact info@antrocket.com. 
+    br
   li
-    |Para envio de materiais de divulgação em nossas mídias sociais, no caso Facebook e Twitter, envie email para #{mail_to 'comunicacao@catarse.me'}. Lá você pode bater uma bola sobre estratégias de comunicação com nossa equipe e receber sugestões sobre como agir na sua campanha. Use com moderação! Lembre-se que a responsabilidade de levar a campanha e divulgar ainda é sua, pois é da sua rede que virão os principais resultados da campanha e este auxílio deve ser usado apenas como apoio. ;)
+    |Fourth. To send promotional materials in our social media, Facebook and Twitter, send email to info@antrocket.com.
+    br
+  li
+    |Last, but very important. Remember that the responsibility to lead the campaign and publicize is still yours, because your own network is to become the main engine for the success of the campaign. 
 br
 br
-|Um abração e seja bem-vindo o/
+br
+|Welcome and have a good campaign!
 br
 br
-|Equipe do #{Configuration[:company_name]}
+|#{Configuration[:company_name]} Team
